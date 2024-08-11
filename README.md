@@ -1,6 +1,9 @@
 Bot Battlr
 Welcome to Bot Battlr—your go-to platform for managing and battling with a collection of unique bots. This React application is designed with simplicity and flexibility in mind, allowing you to easily enlist, manage, and deploy bots in your army. Whether you're just getting started with React or you're a seasoned developer, this app provides a clear and scalable foundation to build upon.
 
+Hosting site
+https://bot-battle-n8fdrbjul-tracys-projects-aa8d8510.vercel.app/
+
 Key Features
 Bot Collection Management: View a comprehensive list of bots, each with its own attributes like health, damage, and armor.
 Sorting & Filtering: Sort bots by various attributes or filter them based on their class for a more focused view.
