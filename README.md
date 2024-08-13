@@ -19,20 +19,20 @@ JSON Server (for simulating the backend API)
 Installation
 Clone the repository to your local machine:
 
-bash
+
 Copy code
 git clone https://github.com/yourusername/bot-battlr.git
 cd bot-battlr
 Install the necessary dependencies:
 
-bash
+
 Copy code
 npm install
 Running the Application
 Start the JSON Server:
 The app uses JSON Server to simulate an API for fetching bot data. To start the server:
 
-bash
+
 Copy code
 npm run server
 This will launch the server on http://localhost:8001.
@@ -40,7 +40,7 @@ This will launch the server on http://localhost:8001.
 Start the React App:
 With the backend running, you can now start the frontend:
 
-bash
+
 Copy code
 npm start
 The app will be available at http://localhost:3000.
@@ -55,7 +55,7 @@ src/BotCollection.js:
 Fetches and displays all available bots. Handles sorting and filtering logic and passes enlistment actions to the parent component.
 
 src/YourBotArmy.js:
-Displays the bots that have been enlisted. Provides an interface to release bots back into the general collection.
+Displays the bots that have been enlisted. Provides an funtionslity to release bots back into the general collection.
 
 src/SortBar.js & src/FilterBar.js:
 Components for sorting and filtering the bot collection. These are highly reusable and can be extended for additional sorting/filtering options.
@@ -63,30 +63,6 @@ Components for sorting and filtering the bot collection. These are highly reusab
 Customization & Extension
 Feel free to extend this project to suit your needs. Some ideas:
 
-Add Bot Classes:
-Expand the FilterBar to include new bot classes or create a dynamic system that pulls classes from the backend.
-
-Enhance UI:
-The current UI is simple and functional, but you can always spice it up with animations, theming, or advanced grid layouts.
-
-Implement Bot Battles:
-The next logical step is to enable bot battles, where users can pit their enlisted bots against others.
-
-Best Practices
-Here are a few tips and best practices to keep in mind when working with this codebase:
-
-State Management:
-For simplicity, we're using React's useState. If your app grows in complexity, consider introducing a more robust state management solution like Redux or Context API.
-
-Component Structure:
-The app is structured to promote reusability. For example, the BotCard component can be abstracted to handle bot display logic in both the collection and army views.
-
-API Integration:
-Currently, we use JSON Server for local development. For production, you may want to integrate with a real backend service or database.
-
-Troubleshooting
-Error: Cannot resolve module...
-Ensure all components are correctly imported and paths are accurate. A common mistake is missing or incorrect relative paths.
 
 Data Not Loading:
 Make sure JSON Server is running and accessible at http://localhost:8001. If you've changed the port or endpoint, update the fetch URL accordingly.
